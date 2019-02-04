@@ -1,0 +1,591 @@
+#question; answer; questionLocale; answerLocale
+a/az ;de/het ;hu;nl
+a kávé, az óra ;de koffie, het uur ;hu;nl
+ábécé ;alfabet ;hu;nl
+ágy ;bed ;hu;nl
+autó ;auto ;hu;nl
+beszél ;spreek ;hu;nl
+Nem beszélek magyarul. ;Ik spreek geen Hongaars. ;hu;nl
+bevezető ;inleiding ;hu;nl
+bocsánat (= elnézést) ;sorry (= pardon) ;hu;nl
+busz ;bus ;hu;nl
+citrom ;citroen ;hu;nl
+csak ;slechts, alleen ;hu;nl
+csokoládé ;chocolade ;hu;nl
+de ;maar, toch ;hu;nl
+dokumentum ;document ;hu;nl
+dzsip ;jeep ;hu;nl
+egy ;een ;hu;nl
+éjszaka ;nacht ;hu;nl
+elefánt ;olifant ;hu;nl
+elnézést (= bocsánat) ;pardon (= sorry) ;hu;nl
+ért vmit ;iets begrijpen ;hu;nl
+Nem értem. ;Ik begrijp het niet. ;hu;nl
+és ;en ;hu;nl
+fejezet ;hoofdstuk ;hu;nl
+feladat ;opdracht, taak ;hu;nl
+fogalom ;begrip ;hu;nl
+Fogalmam sincs. ;Ik zou het echt niet weten. ;hu;nl
+fókusz ;focus ;hu;nl
+fotel ;fauteuil ;hu;nl
+gitár ;gitaar ;hu;nl
+gyufa ;lucifer ;hu;nl
+hang ;stem ;hu;nl
+hasznos ;nuttig ;hu;nl
+hasznos mondat ;een nuttige zin ;hu;nl
+ház ;huis ;hu;nl
+hogy ;hoe ;hu;nl
+Hogy mondják magyarul azt, hogy chair? ;Hoe zeg je chair in het Hongaars? ;hu;nl
+igen ;ja ;hu;nl
+internet ;internet ;hu;nl
+ír vmit ;iets schrijven ;hu;nl
+Írja a szót a kép alá! ;Schrijf het woord onder de afbeelding. ;hu;nl
+íróasztal ;bureau ;hu;nl
+is ;ook ;hu;nl
+jelent vmit ;iets betekenen ;hu;nl
+Mit jelent az, hogy Bocsánat? ;Wat betekent Bocsánat? ;hu;nl
+joghurt ;yoghurt ;hu;nl
+kávé ;koffie ;hu;nl
+kép ;afbeelding ;hu;nl
+kérdez vmit ;iets vragen ;hu;nl
+Kérdezhetek valamit? ;Mag ik iets vragen? ;hu;nl
+ki? ;Wie? ;hu;nl
+köszön ;bedanken ;hu;nl
+Köszönöm szépen. ;Hartelijk bedankt. ;hu;nl
+külföldi ;buitenlander ;hu;nl
+Külföldi vagyok. ;Ik ben een buitenlander. ;hu;nl
+lámpa ;lamp ;hu;nl
+lassú ;langzaam ;hu;nl
+Lassabban, legyen szíves! ;Alstublieft langzamer! ;hu;nl
+legyen szíves ;alstublieft ;hu;nl
+lyuk ;gat ;hu;nl
+magánhangzó ;klinker ;hu;nl
+magas/mély magánhangzó ;hoge/lage klinker ;hu;nl
+magas ;hoog ;hu;nl
+magas magánhangzó ;hoge klinker ;hu;nl
+magyar ;Hongaars ;hu;nl
+Nem beszélek magyarul. ;Ik spreek geen Hongaars. ;hu;nl
+magyaróra ;Hongaarse les ;hu;nl
+mássalhangzó ;medeklinker ;hu;nl
+mély ;laag ;hu;nl
+mély magánhangzó ;lage klinker ;hu;nl
+mi? ;Wat? ;hu;nl
+Mi ez? ;Wat is dit? ;hu;nl
+minden ;alles ;hu;nl
+Világos minden? ;Is alles duidelijk? ;hu;nl
+mobiltelefon ;mobieltje, mobiele telefoon ;hu;nl
+mond vmit ;zeg ;hu;nl
+Hogy mondják magyarul azt, hogy;Hoe zeg je chair in het Hongaars? ;hu;nl
+Mit mondasz? ;Wat zeg je? ;hu;nl
+néhány ;enkele ;hu;nl
+néhány szó ;enkele woorden ;hu;nl
+nem ;nee ;hu;nl
+Nem, nem értem. ;Nee, ik begrijp het niet. ;hu;nl
+nemzetközi ;internationaal ;hu;nl
+név ;naam;hu;nl
+névelő ;lidwoord;hu;nl
+határozott/határozatlan névelő ;bepaald/onbepaald lidwoord;hu;nl
+nyelv ;taal;hu;nl
+a magyar nyelv ;De Hongaarse taal. ;hu;nl
+nyolc ;acht ;hu;nl
+olaj ;olie ;hu;nl
+óra ;klok, horloge, uur ;hu;nl
+öt ;vijf ;hu;nl
+paprika ;paprika ;hu;nl
+rádió ;radio ;hu;nl
+sajnos ;helaas ;hu;nl
+Sajnos nem értem. ;Ik begrijp het helaas niet. ;hu;nl
+saláta ;salade ;hu;nl
+szalámi ;salami ;hu;nl
+szép ;mooi ;hu;nl
+szívesen ;Graag gedaan ;hu;nl
+- Köszönöm. - Szívesen. ;- Dank u wel. – Graag gedaan. ;hu;nl
+szó ;woord ;hu;nl
+Mit jelent ez a szó? ;Wat betekent dit woord? ;hu;nl
+telefon ;telefoon ;hu;nl
+teniszütő ;tennisracket ;hu;nl
+Tessék? ;Sorry? (Wat zegt u?) ;hu;nl
+tud vmit ;iets weten ;hu;nl
+Nem tudom. ;Ik weet het niet. ;hu;nl
+tyúk ;kip ;hu;nl
+uborka ;komkommer ;hu;nl
+új ;nieuw ;hu;nl
+újság ;krant ;hu;nl
+utca ;straat ;hu;nl
+az utcán ;op straat ;hu;nl
+űrhajós ;astronaut ;hu;nl
+üveg ;fles ;hu;nl
+valami ;iets ;hu;nl
+Kérdezhetek valamit? ;Mag ik iets vragen? ;hu;nl
+váza ;vaas ;hu;nl
+világos ;duidelijk ;hu;nl
+Világos minden? ;Is alles duidelijk? ;hu;nl
+whisky ;whisky ;hu;nl
+xilofon ;xylofoon ;hu;nl
+zebra ;zebra ;hu;nl
+zsiráf ;giraf ;hu;nl
+Afrika ;Afrika ;hu;nl
+Afrikában élek. ;Ik woon in Afrika. ;hu;nl
+albán ;Albanees ;hu;nl
+albán ;Albanees (Albanese) ;hu;nl
+Albánia ;Albanië ;hu;nl
+általában ;meestal ;hu;nl
+Otthon általában spanyolul beszélünk. ;Thuis spreken wij meestal Spaans. ;hu;nl
+Amerika ;Amerika ;hu;nl
+Amerikában élek. ;Ik woon in Amerika. ;hu;nl
+amerikai ;Amerikaans ;hu;nl
+Muhammad Ali amerikai bokszoló. ;Mohamed Ali is een Amerikaanse bokser. ;hu;nl
+amerikai ;Amerikaan(se) ;hu;nl
+Amerikai vagyok. ;Ik ben een Amerikaan(se). ;hu;nl
+Anglia ;Engeland ;hu;nl
+Angliában élek. ;Ik woon in Engeland. ;hu;nl
+angol ;Engels ;hu;nl
+Ő az angol barátom. ;Hij is mijn Engelse vriend. ;hu;nl
+angol ;Engels(e) ;hu;nl
+Angol vagyok. ;Ik ben Engels. ;hu;nl
+angolóra ;Engelse les ;hu;nl
+anya (= édesanya) ;moeder ;hu;nl
+anyuka ;mama, moeder ;hu;nl
+Az anyukám magyar. ;Mijn moeder is Hongaarse. ;hu;nl
+anyanyelv ;moedertaal ;hu;nl
+Az anyanyelvem magyar. ;Mijn moedertaal is Hongaars. ;hu;nl
+apa (= édesapa) ;vader ;hu;nl
+apuka ;papa, vader ;hu;nl
+arab ;Arabisch ;hu;nl
+Egyiptom arab ország. ;Egypte is een Arabisch land. ;hu;nl
+arab ;Arabier (Arabische) ;hu;nl
+Az anyukám arab. ;Mijn moeder is Arabische. ;hu;nl
+Argentína ;Argentinië ;hu;nl
+asszisztens ;assistent ;hu;nl
+ausztrál ;Australisch ;hu;nl
+ausztrál ;Australiër (Australische) ;hu;nl
+Ausztrália ;Australië ;hu;nl
+Ausztria ;Oostenrijk ;hu;nl
+azért ... mert ;(daarom)… omdat ;hu;nl
+"Azért tanulok magyarul, mert a feleségem magyar. ";Ik leer Hongaars, omdat mijn vrouw Hongaarse is. ;hu;nl
+Ázsia ;Azië ;hu;nl
+ázsiai ;Aziatisch ;hu;nl
+Japán ázsiai ország. ;Japan is een Aziatisch land. ;hu;nl
+ázsiai ;Aziaat ;hu;nl
+Ázsiai vagyok. ;Ik kom uit Azië. (Ik ben Aziaat.) ;hu;nl
+baj ;probleem ;hu;nl
+Semmi baj. ;Geen probleem. ;hu;nl
+barát ;vriend ;hu;nl
+A barátom török. ;Mijn vriend is Turks. ;hu;nl
+barátnő ;vriendin ;hu;nl
+ A barátnőm olasz. ;Mijn vriendin is Italiaanse. ;hu;nl
+báty(a) ;oom ;hu;nl
+Bécs ;Wenen ;hu;nl
+belga ;Belgisch ;hu;nl
+belga ;Belg (Belgische) ;hu;nl
+Belgium ;België ;hu;nl
+bemutatkozás ;het voorstelling, zich voorstellen ;hu;nl
+beszélget vkivel ;met iemand spreken/discusseren ;hu;nl
+Otthon németül beszélgetünk. ;Thuis spreken wij Duits. ;hu;nl
+bolgár ;Bulgaars ;hu;nl
+bolgár ;Bulgaar(se) ;hu;nl
+Brassó ;Brasov ;hu;nl
+Bosznia-Hercegovina ;Bosnia-Hercegovina ;hu;nl
+brazil ;Braziliaans ;hu;nl
+brazil ;Braziliaan(se) ;hu;nl
+Brazília ;Brasilia ;hu;nl
+Brüsszel ;Brussel ;hu;nl
+búcsúzás ;afscheid ;hu;nl
+Bulgária ;Bulgarije ;hu;nl
+Chile ;Chile ;hu;nl
+cím ;adres ;hu;nl
+A pontos címem Petőfi utca 5.;Mijn adres is Petőfi straat 5.;hu;nl
+Ciprus ;Cyprus ;hu;nl
+ciprusi ;Cypriaans ;hu;nl
+ciprusi ;Cypriaans(e) ;hu;nl
+család ;familie ;hu;nl
+A családom elég kicsi. ;Mijn familie is best klein. ;hu;nl
+családtag ;familielid ;hu;nl
+cseh ;Tsjechisch ;hu;nl
+cseh ;Tsjechisch(e) ;hu;nl
+Csehország ;Tsjechië ;hu;nl
+csinál vmit ;iets doen ;hu;nl
+Mit csinálsz? ;Wat doe je? Wat ben je aan het doen? ;hu;nl
+Csókolom! ;Goedendag! (alleen heren voor dames) ;hu;nl
+dán ;Deens ;hu;nl
+dán ;Deen(se) ;hu;nl
+Dánia ;Denemarken ;hu;nl
+dél ;zuid ;hu;nl
+Dél-Korea ;Zuid-Korea ;hu;nl
+diák ;student ;hu;nl
+Diák vagyok. ;Ik ben student. ;hu;nl
+doktor (dr.) ;doctor (dr.) ;hu;nl
+Dr. Kiss Pál vagyok. ;Ik ben doctor Kiss Pál. ;hu;nl
+édesanya (= anya) ;moeder ;hu;nl
+édesapa (= apa) ;vader ;hu;nl
+Egyesült Arab Emírségek ;Verenigde Arabische Emiraten ;hu;nl
+egyetemista (= diák) ;student(e) ;hu;nl
+Egyiptom ;Egypte ;hu;nl
+egyiptomi ;Egyptische ;hu;nl
+egyiptomi ;Egyptenaar (Egyptische) ;hu;nl
+egymillió ;één miljoen ;hu;nl
+Az országomban egymillió ember él.;Er wonen één miljoen mensen in mijn land. ;hu;nl
+él vhol ;ergens wonen ;hu;nl
+Magyarországon élek. ;Ik woon in Hongarije. ;hu;nl
+elég ;best, aardig ;hu;nl
+Elég jól beszélek olaszul. ;Ik spreek best goed Italiaans. ;hu;nl
+ember ;mensen ;hu;nl
+híres emberek ;Beroemde mensen. ;hu;nl
+én ;ik ;hu;nl
+Én is magyar vagyok. ;Ik ben ook Hongaars. ;hu;nl
+építészmérnök ;bouwkundig ingenieur ;hu;nl
+érdekes ;interessant ;hu;nl
+Ez érdekes! ;Dit is interessant! ;hu;nl
+észt ;Ests ;hu;nl
+észt ;Estlander (Estse) ;hu;nl
+Észtország ;Estland ;hu;nl
+Európa ;Europa ;hu;nl
+európai ;Europees ;hu;nl
+Svájc európai ország. ;Zwitserland is een Europees land. ;hu;nl
+európai ;Europeaan (Europeaanse) ;hu;nl
+Itt mindenki európai. ;Hier is iedereen Europeaan. ;hu;nl
+ez ;dit/deze ;hu;nl
+Mi ez? ;Wat is dit? ;hu;nl
+ezer ;duizend ;hu;nl
+feleség ;echtgenote, vrouw ;hu;nl
+A feleségem finn. ;Mijn echtgenote/vrouw is Finse. ;hu;nl
+festő ;schilder ;hu;nl
+férj ;echtgenoot, man ;hu;nl
+finn ;Fins ;hu;nl
+finn ;Fin(se) ;hu;nl
+Finnország ;Finland ;hu;nl
+fiú ;jongen ;hu;nl
+foglalkozás ;beroep ;hu;nl
+Mi a foglalkozásod? ;Wat is jouw beroep? ;hu;nl
+fontos ;belangrijk ;hu;nl
+formális ;formeel ;hu;nl
+főváros ;hoofdstad ;hu;nl
+francia ;Frans ;hu;nl
+francia ;Frans(e) ;hu;nl
+Franciaország ;Frankrijk ;hu;nl
+Ghána ;Ghana ;hu;nl
+görög ;Grieks ;hu;nl
+görög ;Griek(se) ;hu;nl
+Görögország ;Griekenland ;hu;nl
+gyerek ;kind ;hu;nl
+ha ... akkor ;als… dan ;hu;nl
+Ha a főváros Bécs, akkor az;Als de hoofdstad Wenen is, dan is het land Oostenrijk. ;hu;nl
+ország Ausztria. ;;hu;nl
+hall vmit;iets horen ;hu;nl
+Melyik számot hallja? ;Welk cijfer hoort u? ;hu;nl
+hány? ;Hoeveel? ;hu;nl
+Hány ember beszél horvátul? ;Hoeveel mensen spreken Kroatisch? ;hu;nl
+harminc ;dertig ;hu;nl
+három ;drie ;hu;nl
+hasonló ;vergelijkbaar/ soortgelijk ;hu;nl
+hasonló méretű országok ;landen van soortgelijke grote ;hu;nl
+hat ;zes ;hu;nl
+hatvan ;zestig ;hu;nl
+házastárs ;echtgenoot(e) ;hu;nl
+házszám ;huisnummer ;hu;nl
+héber ;Hebreeuws ;hu;nl
+helyes ;juist ;hu;nl
+helyes válasz ;juiste antwoord ;hu;nl
+hétköznapi ;alledaagse ;hu;nl
+hétköznapi emberek ;alledaagse mensen ;hu;nl
+hét ;zeven ;hu;nl
+hetven ;zeventig ;hu;nl
+hindi ;Hindi ;hu;nl
+híres ;beroemd ;hu;nl
+híres emberek ;beroemde mensen ;hu;nl
+hol? ;Waar? ;hu;nl
+Hol élsz? ;Waar woon je? ;hu;nl
+holland ;Nederlands ;hu;nl
+holland ;Nederlander (Nederlandse) ;hu;nl
+Hollandia ;Nederland ;hu;nl
+horvát ;Kroatisch ;hu;nl
+horvát ;Kroaat (Kroatische) ;hu;nl
+Horvátország ;Kroatië ;hu;nl
+hotel (= szálloda) ;hotel ;hu;nl
+húg ;zusje, kleine zus ;hu;nl
+A húgom 18 éves.;Mijn zusje is 18 jaar oud.;hu;nl
+húsz ;twintig ;hu;nl
+huszonegy ;éénentwintig ;hu;nl
+idő ;tijd ;hu;nl
+Mennyi az idő? ;Hoe laat is het? ;hu;nl
+ige ;werkwoord ;hu;nl
+India ;India ;hu;nl
+indiai ;Indisch ;hu;nl
+indiai ;Indiër (Indiase) ;hu;nl
+Indonézia ;Indonesië ;hu;nl
+információ ;informatie ;hu;nl
+informális ;informeel ;hu;nl
+informatikus ;informaticus ;hu;nl
+irányítószám ;postcode ;hu;nl
+Mi az irányítószámod? ;Wat is jouw postcode? ;hu;nl
+író ;schrijver ;hu;nl
+írónő ;schrijfster ;hu;nl
+Írország ;Scotland ;hu;nl
+iskola ;school ;hu;nl
+Isztambul ;Istanbul ;hu;nl
+itt ;hier ;hu;nl
+jaj ;oh ;hu;nl
+Jaj, bocsánat! ;Oh, sorry! ;hu;nl
+Japán ;Japan ;hu;nl
+japán ;Japans ;hu;nl
+japán ;Japanner (Japanse) ;hu;nl
+jó ;goed ;hu;nl
+Jó estét! ;Goedenavond! ;hu;nl
+jól ;goed ;hu;nl
+Jól beszélek svédül. ;Ik spreek goed Zweeds. ;hu;nl
+Kanada ;Canada ;hu;nl
+kanadai ;Canadees ;hu;nl
+kanadai ;Canadees(e) ;hu;nl
+Kazahsztán ;Kazachstan ;hu;nl
+kb. (= körülbelül) ;ca. (circa) ;hu;nl
+kérdés ;vraag ;hu;nl
+kérdőszó ;vraagwoord ;hu;nl
+kétnyelvű ;tweetalig ;hu;nl
+A családom kétnyelvű. ;Mijn familie is tweetalig. ;hu;nl
+kettő (= két) ;twee ;hu;nl
+kettőszáz (= kétszáz) ;tweehonderd ;hu;nl
+kéz ;hand ;hu;nl
+Kezét csókolom! ;Goedendag! (Ik kus uw hand! alleen heren voor dames) ;hu;nl
+kicsi (= kis) ;klein ;hu;nl
+Magyarország kicsi. ;Hongarije is klein. ;hu;nl
+kiejtés ;uitspraak ;hu;nl
+kilenc ;negen ;hu;nl
+kilencven ;negentig ;hu;nl
+Kína ;China ;hu;nl
+kínai ;Chinees ;hu;nl
+kínai ;Chinees (Chinese) ;hu;nl
+kis (= kicsi) ;klein ;hu;nl
+Magyarország kis ország. ;Hongarije is een klein land. ;hu;nl
+kíván vmit ;iets wensen ;hu;nl
+Jó reggelt kívánok! ;Ik wens u een goede morgen! ;hu;nl
+koncert ;concert ;hu;nl
+kontinens ;continent ;hu;nl
+Korea ;Korea ;hu;nl
+költő ;dichter ;hu;nl
+könyvelő ;account ;hu;nl
+körülbelül (= kb.) ;circa (=ca.) ;hu;nl
+Szöulban körülbelül 20 millió ember él.;Er wonen circa 20 miljoen mensen in Soul.;hu;nl
+köszönés ;begroeting ;hu;nl
+lakcím (= cím) ;adres ;hu;nl
+lehet ;mogelijk ;hu;nl
+Lehet. ;Het is mogelijk. Dat kan. ;hu;nl
+lány ;meisje / dochter ;hu;nl
+A lányom egyetemista. ;Mijn dochter is studeert op de universiteit. ;hu;nl
+lengyel ;Pols ;hu;nl
+lengyel ;Pols(e) ;hu;nl
+Lengyelország ;Polen ;hu;nl
+lett ;Lets ;hu;nl
+lett ;Letlander (Letlandse) ;hu;nl
+Lettország ;Letland ;hu;nl
+Lipcse ;Leipzig ;hu;nl
+litván ;Litouws ;hu;nl
+litván ;Litouwer (Litouwse) ;hu;nl
+Litvánia ;Litouwen ;hu;nl
+majd ;vervolgens ;hu;nl
+Olvassa el a szöveget! Majd egészítse ki a mondatokat! ;Lees de tekst! Vervolgens maakt de zinnen compleet. ;hu;nl
+magyar ;Hongaars ;hu;nl
+magyar ;Hongaar(se) ;hu;nl
+Magyarország ;Hongarije ;hu;nl
+már ;al ;hu;nl
+Már húsz éves vagyok. ;Ik ben al twintig jaar oud. ;hu;nl
+már nem ;niet meer ;hu;nl
+A nagymamám már nem él. ;Mijn oma leeft niet meer. ;hu;nl
+masszőr ;masseur ;hu;nl
+még ;nog ;hu;nl
+A nagypapám még él. ;Mijn opa leeft nog. ;hu;nl
+melyik? ;Welk(e)? ;hu;nl
+Melyik városban él? ;In welke stad woont u? ;hu;nl
+menedzser ;manager ;hu;nl
+mennyi? ;Hoeveel? ;hu;nl
+Mennyi az idő? ;Hoe laat is het? ;hu;nl
+méret ;maat, afmeting, grote ;hu;nl
+hasonló méretű országok ;landen van soortgelijke grote ;hu;nl
+mérnök ;ingenieur ;hu;nl
+mert ;want, omdat ;hu;nl
+- Miért tanulsz olaszul? ;-Waarom leer je Italiaans? ;hu;nl
+- Mert a barátnőm olasz. ;-Omdat mijn vriendin Italiaanse is. ;hu;nl
+mesél vmiről ;iets vertellen ;hu;nl
+Meséljen a családjáról! ;Vertelt u eens iets over uw familie! ;hu;nl
+Mexikó ;Mexico ;hu;nl
+mi ;wij ;hu;nl
+Mi is tudunk kínaiul. ;Wij spreken ook Chinees. ;hu;nl
+miért? ;Waarom? ;hu;nl
+Miért tanul magyarul? ;Waarom leert u Hongaars? ;hu;nl
+millió ;miljoen ;hu;nl
+kétmillió ember ;tweemiljoen mensen ;hu;nl
+milyen? ;Welk(e)? Wat voor? ;hu;nl
+Milyen nyelven beszélsz? ;Welke taal spreek je? ;hu;nl
+mindig ;altijd ;hu;nl
+Otthon mindig magyarul beszélünk. ;Wij spreken thuis altijd Hongaars. ;hu;nl
+mindenki ;iedereen ;hu;nl
+Mindenki tud oroszul. ;Iedereen spreekt Italiaans. ;hu;nl
+olyan ... mint ;zo (zo’n, zulk)….als ;hu;nl
+Dél-Korea olyan kicsi, mint Magyarország.;Zuid-Korea is net zo klein als Hongarije. ;hu;nl
+minta ;voorbeeld ;hu;nl
+a minta alapján ;Volgens het voorbeeld. ;hu;nl
+mobilszám ;Mobiel nummer ;hu;nl
+Mi a mobilszámod? ;Wat is jouw mobiele nummer? ;hu;nl
+most ;nu ;hu;nl
+Most magyarul tanulok. ;Ik leer nu Hongaars. ;hu;nl
+nagy ;groot ;hu;nl
+India nagy ország. ;India is een groot land. ;hu;nl
+nagyanya;grootmoeder ;hu;nl
+nagymama ;oma ;hu;nl
+nagyon ;zeer, heel ;hu;nl
+Sára nagyon jól tud arabul. ;Sara spreekt zeer goed Arabisch. ;hu;nl
+nagyapa ;grootvader ;hu;nl
+nagypapa ;opa ;hu;nl
+nagyszülő ;grootouder ;hu;nl
+négy ;vier ;hu;nl
+negyven ;veertig ;hu;nl
+négyzetkilométer ;vierkante meter ;hu;nl
+néha ;af en toe, zelden ;hu;nl
+Csak néha beszélek németül. ;Ik spreek maar af en toe Duits. ;hu;nl
+német ;Duits ;hu;nl
+német ;Duits ;hu;nl
+Németország ;Duitsland ;hu;nl
+nemzetiség ;nationaliteit ;hu;nl
+Milyen nemzetiségű vagy? ;Wat is jouw nationaliteit? ;hu;nl
+névjegykártya ;visitekaartje ;hu;nl
+norvég ;Noors ;hu;nl
+norvég ;Noor(se) ;hu;nl
+Norvégia ;Noorwegen ;hu;nl
+nő ;vrouw ;hu;nl
+nővér ;zus (oudere) ;hu;nl
+A nővérem mérnök. ;Mijn zus is ingenieur. ;hu;nl
+nulla ;nul ;hu;nl
+nyelviskola ;taalcursus ;hu;nl
+olasz ;Italiaans ;hu;nl
+olasz ;Italiaan(se) ;hu;nl
+Olaszország ;Italië ;hu;nl
+olvas vmit ;iets lezen ;hu;nl
+Olvassa el a szöveget! ;Lees de tekst! ;hu;nl
+olyan ... mint ;zo (zo’n, zulk)… als ;hu;nl
+Portugália olyan kicsi, mint Magyarország. ;Portugal is net zo klein als Hongarije. ;hu;nl
+operaénekes ;operazangeres ;hu;nl
+óra ;klok, uur, horloge ;hu;nl
+három óra ;Het is drie uur. ;hu;nl
+orosz ;Russisch ;hu;nl
+orosz ;Rus(sin) ;hu;nl
+Oroszország ;Rusland ;hu;nl
+ország ;land ;hu;nl
+orvos ;dokter ;hu;nl
+osztrák ;Oostenrijks ;hu;nl
+osztrák ;Oostenrijker (Oostenrijkse) ;hu;nl
+ott ;daar ;hu;nl
+Barcelonában élek. A családom is ott él. ;Ik woon in Barcelona. Mijn familie woont daar ook. ;hu;nl
+otthon ;thuis ;hu;nl
+Otthon magyarul beszélünk. ;Thuis spreken wij Hongaars. ;hu;nl
+otthoni ;vaste (thuis) ;hu;nl
+Az otthoni telefonszámom ... ;Mijn vaste telefoonnummer is … ;hu;nl
+ő ;hij/zij/het ;hu;nl
+öcs ;broertje ;hu;nl
+Az öcsém mérnök. ;Mijn broertje is ingenieur. ;hu;nl
+ők ;zij ;hu;nl
+Ön ;u ;hu;nl
+Önök ;u ;hu;nl
+örül ;blij zijn ;hu;nl
+Nagyon örülök. ;Aangenaam. ;hu;nl
+ötven ;vijftig ;hu;nl
+Pakisztán ;Pakistaan ;hu;nl
+Párizs ;Parijs ;hu;nl
+Peking ;Peking ;hu;nl
+példa ;voorbeeld ;hu;nl
+perc ;Minuut ;hu;nl
+három óra két perc ;Het is twee over drie. ;hu;nl
+politikus ;politicus ;hu;nl
+pontos ;precies ;hu;nl
+A pontos címem Petőfi utca 5.;Mijn precieze adres is Petőfi straat 5.;hu;nl
+portugál ;Portugees ;hu;nl
+portugál ;Portugees(Portugese) ;hu;nl
+Portugália ;Portugal ;hu;nl
+Pozsony ;Bratislava ;hu;nl
+Prága ;Praag ;hu;nl
+pszichológus ;psycholoog ;hu;nl
+román ;Roemeens ;hu;nl
+román ;Roemeen(se) ;hu;nl
+Románia ;Roemenië ;hu;nl
+saját ;eigen ;hu;nl
+a saját nevem ;Mijn eigen naam. ;hu;nl
+sem ;ook niet ;hu;nl
+- Nem beszélek németül. ;- Ik spreek geen Duits. ;hu;nl
+- Én sem. ;- Ik ook niet. ;hu;nl
+semmi ;niets ;hu;nl
+Semmi baj. ;Geen probleem. ;hu;nl
+sofőr ;chauffeur ;hu;nl
+buszsofőr, taxisofőr ;Buschauffeur, taxichauffeur ;hu;nl
+spanyol ;Spaans ;hu;nl
+spanyol ;Spanjaard (Spaanse) ;hu;nl
+spanyolóra ;Spaans les ;hu;nl
+Spanyolország ;Spanje ;hu;nl
+sportoló ;Sporter ;hu;nl
+Svájc ;Zwitserland ;hu;nl
+svájci ;Zwitsers ;hu;nl
+svájci ;Zwitser(se) ;hu;nl
+svéd ;Zweeds ;hu;nl
+svéd ;Zweed(se) ;hu;nl
+Svédország ;Zweden ;hu;nl
+szakács ;kok ;hu;nl
+szám ;nummer ;hu;nl
+száz ;honderd ;hu;nl
+százegy ;honderdeen ;hu;nl
+százezer ;honderdduizend ;hu;nl
+Szentpétervár ;Sint-Petersburg ;hu;nl
+szerb ;Servisch ;hu;nl
+szerb ;Serviër (Servische) ;hu;nl
+szerint ;volgens ;hu;nl
+Szerintem ... ;Volgens mij … ;hu;nl
+sziget ;eiland ;hu;nl
+A barátom egy szigeten él. ;Mijn vriend woont op een eiland. ;hu;nl
+színész ;acteur ;hu;nl
+szlovák ;Slowaaks ;hu;nl
+szlovák ;Slowaak(se) ;hu;nl
+Szlovákia ;Slowakije ;hu;nl
+szlovén ;Sloveens ;hu;nl
+szlovén ;Sloveen(se) ;hu;nl
+Szlovénia ;Slovenië ;hu;nl
+szuper ;super ;hu;nl
+szülő ;ouder ;hu;nl
+találkozás ;ontmoeting ;hu;nl
+talán ;misschien ;hu;nl
+Petra talán tud németül. ;Petra kan misschien Duits. ;hu;nl
+tanár ;leraar ;hu;nl
+tanárnő ;lerares ;hu;nl
+tanul vmilyen nyelven ;Een taal leren ;hu;nl
+Angolul tanulok. ;Ik leer Engels. ;hu;nl
+taxisofőr ;taxichauffeur ;hu;nl
+te ;jij ;hu;nl
+telefonszám ;telefoonnummer ;hu;nl
+teniszező ;tennisser ;hu;nl
+tényleg ;echt waar, werkelijk ;hu;nl
+- Színész vagyok. - Tényleg? ;- Ik ben acteur. – Echt waar? ;hu;nl
+térkép ;landkaart ;hu;nl
+testvér ;broer/zus ;hu;nl
+Thaiföld ;Thailand ;hu;nl
+ti ;jullie ;hu;nl
+tíz ;tien ;hu;nl
+tizenegy ;elf ;hu;nl
+török ;Turks ;hu;nl
+török ;Turk(se) ;hu;nl
+Törökország ;Turkije ;hu;nl
+ugye ;nietwaar, toch ;hu;nl
+Magyar vagy, ugye? ;Je bent Hongaar, toch? ;hu;nl
+újra ;opnieuw ;hu;nl
+Hallgassa meg újra a szöveget! ;Beluister de tekst opnieuw! ;hu;nl
+Ukrajna ;Oekraïne ;hu;nl
+ukrán ;Oekraïens ;hu;nl
+ukrán ;Oekraïner(se) ;hu;nl
+USA ;VS (Verenigde Staten van Amerika) ;hu;nl
+A lányom az USA-ban él. ;Mijn docht woont in de VS.;hu;nl
+üzletember ;zakenman ;hu;nl
+valaki ;iemand ;hu;nl
+Beszél itt valaki japánul? ;Spreekt hier iemand Japans? ;hu;nl
+válasz ;antwoord ;hu;nl
+van ;zijn ;hu;nl
+Magyar vagyok. ;Ik ben Hongaar. ;hu;nl
+város ;stad ;hu;nl
+a városban ;in de stad ;hu;nl
+vélemény ;mening ;hu;nl
+világ ;wereld ;hu;nl
+a világon ;op de wereld ;hu;nl
+zeneszerző ;componist ;hu;nl

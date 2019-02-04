@@ -1,0 +1,20 @@
+PODS:
+  - kfmdb (2.6.8):
+    - ksqlite
+  - ksqlite (3.13.8)
+
+DEPENDENCIES:
+  - kfmdb
+
+SPEC REPOS:
+  "http://rual@gitlab.knowlogy.nl/jimbo-ios/knowlogySpecs.git":
+    - kfmdb
+    - ksqlite
+
+SPEC CHECKSUMS:
+  kfmdb: a993902b31d4c36c7d68fb42c368ef99e8639e3b
+  ksqlite: 2fee3a68a679d37519515088517be95f822b5dd9
+
+PODFILE CHECKSUM: 9faffba743f6ee37ebe1879d6547de0e8e6082ea
+
+COCOAPODS: 1.5.3
