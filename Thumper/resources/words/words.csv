@@ -1,27 +1,13 @@
 #question; answer; questionLocale; answerLocale
-a/az ;de/het ;hu;nl
-a kávé, az óra ;de koffie, het uur ;hu;nl
-ábécé ;alfabet ;hu;nl
 ágy ;bed ;hu;nl
-autó ;auto ;hu;nl
-beszél ;spreek ;hu;nl
-Nem beszélek magyarul. ;Ik spreek geen Hongaars. ;hu;nl
-bevezető ;inleiding ;hu;nl
 bocsánat (= elnézést) ;sorry (= pardon) ;hu;nl
-busz ;bus ;hu;nl
 citrom ;citroen ;hu;nl
 csak ;slechts, alleen ;hu;nl
-csokoládé ;chocolade ;hu;nl
 de ;maar, toch ;hu;nl
-dokumentum ;document ;hu;nl
 dzsip ;jeep ;hu;nl
-egy ;een ;hu;nl
 éjszaka ;nacht ;hu;nl
 elefánt ;olifant ;hu;nl
-elnézést (= bocsánat) ;pardon (= sorry) ;hu;nl
-ért vmit ;iets begrijpen ;hu;nl
 Nem értem. ;Ik begrijp het niet. ;hu;nl
-és ;en ;hu;nl
 fejezet ;hoofdstuk ;hu;nl
 feladat ;opdracht, taak ;hu;nl
 fogalom ;begrip ;hu;nl
@@ -32,61 +18,40 @@ gitár ;gitaar ;hu;nl
 gyufa ;lucifer ;hu;nl
 hang ;stem ;hu;nl
 hasznos ;nuttig ;hu;nl
-hasznos mondat ;een nuttige zin ;hu;nl
 ház ;huis ;hu;nl
 hogy ;hoe ;hu;nl
-Hogy mondják magyarul azt, hogy chair? ;Hoe zeg je chair in het Hongaars? ;hu;nl
 igen ;ja ;hu;nl
-internet ;internet ;hu;nl
-ír vmit ;iets schrijven ;hu;nl
-Írja a szót a kép alá! ;Schrijf het woord onder de afbeelding. ;hu;nl
 íróasztal ;bureau ;hu;nl
 is ;ook ;hu;nl
-jelent vmit ;iets betekenen ;hu;nl
-Mit jelent az, hogy Bocsánat? ;Wat betekent Bocsánat? ;hu;nl
 joghurt ;yoghurt ;hu;nl
 kávé ;koffie ;hu;nl
 kép ;afbeelding ;hu;nl
-kérdez vmit ;iets vragen ;hu;nl
 Kérdezhetek valamit? ;Mag ik iets vragen? ;hu;nl
 ki? ;Wie? ;hu;nl
 köszön ;bedanken ;hu;nl
 Köszönöm szépen. ;Hartelijk bedankt. ;hu;nl
 külföldi ;buitenlander ;hu;nl
-Külföldi vagyok. ;Ik ben een buitenlander. ;hu;nl
 lámpa ;lamp ;hu;nl
 lassú ;langzaam ;hu;nl
-Lassabban, legyen szíves! ;Alstublieft langzamer! ;hu;nl
+Lassabban; langzamer ;hu;nl
 legyen szíves ;alstublieft ;hu;nl
 lyuk ;gat ;hu;nl
 magánhangzó ;klinker ;hu;nl
-magas/mély magánhangzó ;hoge/lage klinker ;hu;nl
 magas ;hoog ;hu;nl
-magas magánhangzó ;hoge klinker ;hu;nl
 magyar ;Hongaars ;hu;nl
-Nem beszélek magyarul. ;Ik spreek geen Hongaars. ;hu;nl
 magyaróra ;Hongaarse les ;hu;nl
 mássalhangzó ;medeklinker ;hu;nl
 mély ;laag ;hu;nl
-mély magánhangzó ;lage klinker ;hu;nl
 mi? ;Wat? ;hu;nl
-Mi ez? ;Wat is dit? ;hu;nl
 minden ;alles ;hu;nl
-Világos minden? ;Is alles duidelijk? ;hu;nl
 mobiltelefon ;mobieltje, mobiele telefoon ;hu;nl
-mond vmit ;zeg ;hu;nl
-Hogy mondják magyarul azt, hogy;Hoe zeg je chair in het Hongaars? ;hu;nl
 Mit mondasz? ;Wat zeg je? ;hu;nl
 néhány ;enkele ;hu;nl
-néhány szó ;enkele woorden ;hu;nl
 nem ;nee ;hu;nl
-Nem, nem értem. ;Nee, ik begrijp het niet. ;hu;nl
 nemzetközi ;internationaal ;hu;nl
 név ;naam;hu;nl
 névelő ;lidwoord;hu;nl
-határozott/határozatlan névelő ;bepaald/onbepaald lidwoord;hu;nl
 nyelv ;taal;hu;nl
-a magyar nyelv ;De Hongaarse taal. ;hu;nl
 nyolc ;acht ;hu;nl
 olaj ;olie ;hu;nl
 óra ;klok, horloge, uur ;hu;nl
@@ -94,29 +59,23 @@ olaj ;olie ;hu;nl
 paprika ;paprika ;hu;nl
 rádió ;radio ;hu;nl
 sajnos ;helaas ;hu;nl
-Sajnos nem értem. ;Ik begrijp het helaas niet. ;hu;nl
 saláta ;salade ;hu;nl
 szalámi ;salami ;hu;nl
 szép ;mooi ;hu;nl
 szívesen ;Graag gedaan ;hu;nl
-- Köszönöm. - Szívesen. ;- Dank u wel. – Graag gedaan. ;hu;nl
 szó ;woord ;hu;nl
-Mit jelent ez a szó? ;Wat betekent dit woord? ;hu;nl
 telefon ;telefoon ;hu;nl
 teniszütő ;tennisracket ;hu;nl
 Tessék? ;Sorry? (Wat zegt u?) ;hu;nl
-tud vmit ;iets weten ;hu;nl
 Nem tudom. ;Ik weet het niet. ;hu;nl
 tyúk ;kip ;hu;nl
 uborka ;komkommer ;hu;nl
 új ;nieuw ;hu;nl
 újság ;krant ;hu;nl
 utca ;straat ;hu;nl
-az utcán ;op straat ;hu;nl
 űrhajós ;astronaut ;hu;nl
 üveg ;fles ;hu;nl
 valami ;iets ;hu;nl
-Kérdezhetek valamit? ;Mag ik iets vragen? ;hu;nl
 váza ;vaas ;hu;nl
 világos ;duidelijk ;hu;nl
 Világos minden? ;Is alles duidelijk? ;hu;nl
@@ -125,55 +84,32 @@ xilofon ;xylofoon ;hu;nl
 zebra ;zebra ;hu;nl
 zsiráf ;giraf ;hu;nl
 Afrika ;Afrika ;hu;nl
-Afrikában élek. ;Ik woon in Afrika. ;hu;nl
-albán ;Albanees ;hu;nl
 albán ;Albanees (Albanese) ;hu;nl
 Albánia ;Albanië ;hu;nl
 általában ;meestal ;hu;nl
-Otthon általában spanyolul beszélünk. ;Thuis spreken wij meestal Spaans. ;hu;nl
 Amerika ;Amerika ;hu;nl
-Amerikában élek. ;Ik woon in Amerika. ;hu;nl
-amerikai ;Amerikaans ;hu;nl
-Muhammad Ali amerikai bokszoló. ;Mohamed Ali is een Amerikaanse bokser. ;hu;nl
-amerikai ;Amerikaan(se) ;hu;nl
-Amerikai vagyok. ;Ik ben een Amerikaan(se). ;hu;nl
+amerikai ;Amerikaans, Amerikaan(se) ;hu;nl
 Anglia ;Engeland ;hu;nl
-Angliában élek. ;Ik woon in Engeland. ;hu;nl
-angol ;Engels ;hu;nl
-Ő az angol barátom. ;Hij is mijn Engelse vriend. ;hu;nl
 angol ;Engels(e) ;hu;nl
-Angol vagyok. ;Ik ben Engels. ;hu;nl
 angolóra ;Engelse les ;hu;nl
 anya (= édesanya) ;moeder ;hu;nl
 anyuka ;mama, moeder ;hu;nl
-Az anyukám magyar. ;Mijn moeder is Hongaarse. ;hu;nl
 anyanyelv ;moedertaal ;hu;nl
-Az anyanyelvem magyar. ;Mijn moedertaal is Hongaars. ;hu;nl
 apa (= édesapa) ;vader ;hu;nl
 apuka ;papa, vader ;hu;nl
-arab ;Arabisch ;hu;nl
-Egyiptom arab ország. ;Egypte is een Arabisch land. ;hu;nl
-arab ;Arabier (Arabische) ;hu;nl
-Az anyukám arab. ;Mijn moeder is Arabische. ;hu;nl
+arab ;Arabisch, Arabier (Arabische) ;hu;nl
 Argentína ;Argentinië ;hu;nl
 asszisztens ;assistent ;hu;nl
-ausztrál ;Australisch ;hu;nl
-ausztrál ;Australiër (Australische) ;hu;nl
+ausztrál ;Australisch, Australiër (Australische) ;hu;nl
 Ausztrália ;Australië ;hu;nl
 Ausztria ;Oostenrijk ;hu;nl
 azért ... mert ;(daarom)… omdat ;hu;nl
-"Azért tanulok magyarul, mert a feleségem magyar. ";Ik leer Hongaars, omdat mijn vrouw Hongaarse is. ;hu;nl
 Ázsia ;Azië ;hu;nl
-ázsiai ;Aziatisch ;hu;nl
-Japán ázsiai ország. ;Japan is een Aziatisch land. ;hu;nl
-ázsiai ;Aziaat ;hu;nl
-Ázsiai vagyok. ;Ik kom uit Azië. (Ik ben Aziaat.) ;hu;nl
+ázsiai ;Aziaat, Aziatisch ;hu;nl
 baj ;probleem ;hu;nl
 Semmi baj. ;Geen probleem. ;hu;nl
 barát ;vriend ;hu;nl
-A barátom török. ;Mijn vriend is Turks. ;hu;nl
 barátnő ;vriendin ;hu;nl
- A barátnőm olasz. ;Mijn vriendin is Italiaanse. ;hu;nl
 báty(a) ;oom ;hu;nl
 Bécs ;Wenen ;hu;nl
 belga ;Belgisch ;hu;nl
