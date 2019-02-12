@@ -1,7 +1,7 @@
 PODS:
-  - kfmdb (2.6.8):
+  - kfmdb (2.6.14):
     - ksqlite
-  - ksqlite (3.13.8)
+  - ksqlite (3.13.13)
 
 DEPENDENCIES:
   - kfmdb
@@ -12,8 +12,8 @@ SPEC REPOS:
     - ksqlite
 
 SPEC CHECKSUMS:
-  kfmdb: a993902b31d4c36c7d68fb42c368ef99e8639e3b
-  ksqlite: 2fee3a68a679d37519515088517be95f822b5dd9
+  kfmdb: f95499043b6557039a3951d08713f2512baa39a2
+  ksqlite: 6009c52566a0b6d2a5a23f819c7c55b6ebd32393
 
 PODFILE CHECKSUM: 9faffba743f6ee37ebe1879d6547de0e8e6082ea
 

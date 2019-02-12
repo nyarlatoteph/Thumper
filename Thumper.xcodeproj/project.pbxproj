@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		161C8BA3221212C900EBF90A /* QuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161C8BA2221212C900EBF90A /* QuestionController.swift */; };
+		161C8BA52212193200EBF90A /* AnswerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161C8BA42212193200EBF90A /* AnswerController.swift */; };
 		1638013E217B8889003CBF75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1638013D217B8889003CBF75 /* AppDelegate.swift */; };
 		16380140217B8889003CBF75 /* QuizController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1638013F217B8889003CBF75 /* QuizController.swift */; };
 		16380143217B8889003CBF75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16380141217B8889003CBF75 /* Main.storyboard */; };
@@ -15,6 +17,7 @@
 		16380153217B888A003CBF75 /* ThumperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16380152217B888A003CBF75 /* ThumperTests.swift */; };
 		1638015E217B888B003CBF75 /* ThumperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1638015D217B888B003CBF75 /* ThumperUITests.swift */; };
 		1638016C217B926C003CBF75 /* WordsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1638016B217B926C003CBF75 /* WordsService.swift */; };
+		167608FE22120C0600940CF3 /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 167608FC22120C0600940CF3 /* Main2.storyboard */; };
 		16957B9B220A251000F63A00 /* words in Resources */ = {isa = PBXBuildFile; fileRef = 16957B9A220A251000F63A00 /* words */; };
 		16E933D721FF8AF70074E266 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 16E933D621FF8AF70074E266 /* Podfile */; };
 		9A122223514E6F68369A78DC /* Pods_Thumper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1FBB1F4463ECA9406133390 /* Pods_Thumper.framework */; };
@@ -38,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		161C8BA2221212C900EBF90A /* QuestionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionController.swift; sourceTree = "<group>"; };
+		161C8BA42212193200EBF90A /* AnswerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerController.swift; sourceTree = "<group>"; };
 		1638013A217B8889003CBF75 /* Thumper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thumper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1638013D217B8889003CBF75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1638013F217B8889003CBF75 /* QuizController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizController.swift; sourceTree = "<group>"; };
@@ -52,6 +57,7 @@
 		1638015D217B888B003CBF75 /* ThumperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumperUITests.swift; sourceTree = "<group>"; };
 		1638015F217B888B003CBF75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1638016B217B926C003CBF75 /* WordsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsService.swift; sourceTree = "<group>"; };
+		167608FD22120C0600940CF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main2.storyboard; sourceTree = "<group>"; };
 		16957B9A220A251000F63A00 /* words */ = {isa = PBXFileReference; lastKnownFileType = folder; name = words; path = resources/words; sourceTree = "<group>"; };
 		169F747E21FF8C6500DDAE6E /* libkfmdb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libkfmdb.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		169F748021FF8C6500DDAE6E /* libksqlite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libksqlite.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +127,9 @@
 				16380146217B888A003CBF75 /* LaunchScreen.storyboard */,
 				16380149217B888A003CBF75 /* Info.plist */,
 				1638016B217B926C003CBF75 /* WordsService.swift */,
+				167608FC22120C0600940CF3 /* Main2.storyboard */,
+				161C8BA2221212C900EBF90A /* QuestionController.swift */,
+				161C8BA42212193200EBF90A /* AnswerController.swift */,
 			);
 			path = Thumper;
 			sourceTree = "<group>";
@@ -272,6 +281,7 @@
 				16380148217B888A003CBF75 /* LaunchScreen.storyboard in Resources */,
 				16380145217B888A003CBF75 /* Assets.xcassets in Resources */,
 				16380143217B8889003CBF75 /* Main.storyboard in Resources */,
+				167608FE22120C0600940CF3 /* Main2.storyboard in Resources */,
 				16957B9B220A251000F63A00 /* words in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,14 +335,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Thumper/Pods-Thumper-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/kfmdb/kfmdb.framework",
-				"${BUILT_PRODUCTS_DIR}/ksqlite/ksqlite.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/kfmdb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ksqlite.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -349,6 +357,8 @@
 				16380140217B8889003CBF75 /* QuizController.swift in Sources */,
 				1638016C217B926C003CBF75 /* WordsService.swift in Sources */,
 				1638013E217B8889003CBF75 /* AppDelegate.swift in Sources */,
+				161C8BA3221212C900EBF90A /* QuestionController.swift in Sources */,
+				161C8BA52212193200EBF90A /* AnswerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +408,14 @@
 				16380147217B888A003CBF75 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		167608FC22120C0600940CF3 /* Main2.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				167608FD22120C0600940CF3 /* Base */,
+			);
+			name = Main2.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

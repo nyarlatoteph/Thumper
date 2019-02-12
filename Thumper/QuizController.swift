@@ -8,8 +8,11 @@ import UIKit
 class QuizController: UIViewController {
     
     @IBOutlet private var button: UIButton?
+    @IBOutlet private var right: UIButton?
+    @IBOutlet private var wrong: UIButton?
     @IBOutlet private var questionLabel: UILabel?
     @IBOutlet private var answerLabel: UILabel?
+    @IBOutlet private var infoText: UILabel?
     @IBOutlet private var questionLocale: UIImageView?
     @IBOutlet private var answerLocale: UIImageView?
     
@@ -24,7 +27,7 @@ class QuizController: UIViewController {
 
     @IBAction public func reveal() {
         if nextQuestion {
-            if let qw = WordsService.shared.random() {
+            if let qw = WordsService.shared.next() {
                 quizWord = qw
                 reversed = Bool.random()
                 nextQuestion = false
@@ -40,11 +43,15 @@ class QuizController: UIViewController {
                 }
                 answerLabel?.text = ""
                 button?.setTitle("Onthul", for: .normal)
+                right?.isHidden = true
+                wrong?.isHidden = true
             }
         } else {
             button?.setTitle("Volgende", for: .normal)
             answerLabel?.text = reversed ? quizWord?.question : quizWord?.answer
             nextQuestion = true
+            right?.isHidden = false
+            wrong?.isHidden = false
         }
     }
     
