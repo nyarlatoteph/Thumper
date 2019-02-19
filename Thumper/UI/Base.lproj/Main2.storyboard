@@ -29,11 +29,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Answer?" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DSc-rx-klr" userLabel="answer">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Answer?" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="DSc-rx-klr" userLabel="answer">
                                 <rect key="frame" x="0.0" y="346" width="375" height="39"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGS-Rc-aLr" userLabel="dont_know">
                                 <rect key="frame" x="87.5" y="490" width="200" height="51"/>
@@ -46,6 +46,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="dontKnow" destination="eEr-VK-8ft" eventType="touchUpInside" id="GSd-dt-iRs"/>
                                     <segue destination="zgL-yq-PcN" kind="show" identifier="showAnswer" id="DXd-Fu-DKY"/>
                                 </connections>
                             </button>
@@ -119,6 +120,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="next" destination="zgL-yq-PcN" eventType="touchUpInside" id="5Jz-ya-wa4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4i-zu-mol" userLabel="was_right">
                                 <rect key="frame" x="187.5" y="490" width="160" height="51"/>
@@ -157,6 +161,7 @@
                         <outlet property="correct" destination="ccD-b1-c4g" id="ab4-f0-HDx"/>
                         <outlet property="correct_answer" destination="k79-C1-SQc" id="BsC-oy-IIg"/>
                         <outlet property="infoText" destination="2Hp-co-YfF" id="TFw-wi-yn9"/>
+                        <outlet property="nextButton" destination="r4r-qE-YpL" id="LOO-oe-PuR"/>
                         <outlet property="wrong" destination="otS-xD-KPu" id="V4a-te-Zc6"/>
                     </connections>
                 </viewController>

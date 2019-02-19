@@ -21,8 +21,9 @@ class WordsService {
     public var wordsForThisSession: [QuizWord] = []
     public var newWordsPerDay = 5
     public var currentWord: QuizWord? = nil
-    public var wordNumber: Int = -1
-    
+    public var wordNumber: Int = 0
+    public var currentQuestionLocaleIsNL: Bool = false
+    public var answer: String?
     
     public var lastUsed: Date? {
         get {
@@ -71,11 +72,6 @@ class WordsService {
                                 try self.selectNewWordsForLevel1()
                             }
                         }
-                        
-                        // Read words from db
-                        try readWordsFromDb()
-                        print(self.wordsForThisSession)
-
                     } else {
                         
                     }
@@ -107,7 +103,7 @@ class WordsService {
         }
         let f = "\(path)/\(file)"
         if FileManager.default.fileExists(atPath: f) {
-            let words = readWordsFromCSV(f)
+            let words = try readWordsFromCSV(f)
             for qw in words {
                 try db?.executeUpdate("insert into words (question, answer, questionLocale, answerLocale, level) values(?, ?, ?, ?, ?)",
                                       values: [qw.question, qw.answer, qw.questionLocale.identifier, qw.answerLocale.identifier, qw.level])
@@ -117,9 +113,8 @@ class WordsService {
     }
     
     
-    private func readWordsFromDb() throws {
-        let sessionDay = self.sessionDay(self.lastUsed)
-        for level in self.levelsForDay(sessionDay) {
+    public func initWordsForLevels(_ levels: [Int]) throws {
+        for level in levels {
             if let rs = try db?.executeQuery("select question, answer, questionLocale, answerLocale, level from words where level = ?",
                                              values: [level]) {
                 while rs.next() {
@@ -136,24 +131,21 @@ class WordsService {
                 }
             }
         }
+        self.currentWord = self.wordsForThisSession.first
     }
     
-    private func readWordsFromCSV(_ file: String) -> [QuizWord] {
+    private func readWordsFromCSV(_ file: String) throws -> [QuizWord] {
         var words: [QuizWord] = []
-        do {
-            let content = try String(contentsOfFile: file, encoding: String.Encoding.utf8)
-            let parsedCSV: [[String]] = Array(content.components(separatedBy: "\n").map{ $0.components(separatedBy: ";")}.dropFirst())
-            for line in parsedCSV {
-                if (line.count == 4) {
-                    let question = line[0].trimmingCharacters(in: .whitespacesAndNewlines)
-                    let answer = line[1].trimmingCharacters(in: .whitespacesAndNewlines)
-                    let qlc = Locale(identifier: line[2].trimmingCharacters(in: .whitespacesAndNewlines))
-                    let alc = Locale(identifier: line[3].trimmingCharacters(in: .whitespacesAndNewlines))
-                    words.append(QuizWord(question: question, answer: answer, questionLocale: qlc, answerLocale: alc, level: 0))
-                }
+        let content = try String(contentsOfFile: file, encoding: String.Encoding.utf8)
+        let parsedCSV: [[String]] = Array(content.components(separatedBy: "\n").map{ $0.components(separatedBy: ";")}.dropFirst())
+        for line in parsedCSV {
+            if (line.count == 4) {
+                let question = line[0].trimmingCharacters(in: .whitespacesAndNewlines)
+                let answer = line[1].trimmingCharacters(in: .whitespacesAndNewlines)
+                let qlc = Locale(identifier: line[2].trimmingCharacters(in: .whitespacesAndNewlines))
+                let alc = Locale(identifier: line[3].trimmingCharacters(in: .whitespacesAndNewlines))
+                words.append(QuizWord(question: question, answer: answer, questionLocale: qlc, answerLocale: alc, level: 0))
             }
-        } catch {
-            print("Error initializing words: \(error).")
         }
         return words
     }
@@ -166,42 +158,14 @@ class WordsService {
         if hasNext() {
             wordNumber = wordNumber+1
             currentWord = wordsForThisSession[wordNumber]
+            currentQuestionLocaleIsNL = Bool.random()
         }
         return currentWord
     }
     
-    public func sessionDay(_ date: Date?) -> Int {
-        var sessionDay = 0
-        if let d = date {
-            let calendar = Calendar.current
-            let date1 = calendar.startOfDay(for: d)
-            let date2 = calendar.startOfDay(for: Date())
-            let components = calendar.dateComponents([.day], from: date1, to: date2)
-            sessionDay = components.day ?? 0
+    public func isAnswerCorrect() -> Bool {
+        if currentQuestionLocaleIsNL {
+            
         }
-        return sessionDay
-    }
-    
-    public func levelsForDay(_ date: Int) -> Array<Int> {
-        var ret:Array<Int> = [1]
-        if date % 2 == 0 {
-            ret.insert(2, at: 0)
-        }
-        if (date-1) % 4 == 0 {
-            ret.insert(3, at: 0)
-        }
-        if [3, 12, 19, 28, 35, 44, 51, 60].contains(date % 64) {
-            ret.insert(4, at: 0)
-        }
-        if [11, 27, 43, 59].contains(date % 64) {
-            ret.insert(5, at: 0)
-        }
-        if [23, 58].contains(date % 64) {
-            ret.insert(6, at: 0)
-        }
-        if date % 64 == 55 {
-            ret.insert(7, at: 0)
-        }
-        return ret
     }
 }

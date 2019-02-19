@@ -13,13 +13,13 @@ class QuestionController: UIViewController {
     @IBOutlet private var infoText: UILabel?
     @IBOutlet private var questionLocale: UIImageView?
     @IBOutlet private var answerLocale: UIImageView?
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        if let quizword = WordsService.shared.next() {
+        if let quizword = WordsService.shared.currentWord {
             infoText?.text = "Level: \(quizword.level). Card \(WordsService.shared.wordNumber+1) of \(WordsService.shared.wordsForThisSession.count)."
-            if Bool.random() {
+            if WordsService.shared.currentQuestionLocaleIsNL {
                 question?.text = quizword.answer
                 questionLocale?.image = UIImage(named: quizword.answerLocale.languageCode ?? "nl")
                 answerLocale?.image = UIImage(named: quizword.questionLocale.languageCode ?? "hu")
@@ -29,5 +29,9 @@ class QuestionController: UIViewController {
                 answerLocale?.image = UIImage(named: quizword.answerLocale.languageCode ?? "hu")
             }
         }
+    }
+    
+    @IBAction func dontKnow() {
+        WordsService.shared.answer = answer?.text
     }
 }
