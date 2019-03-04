@@ -6,7 +6,7 @@
 import Foundation
 import UIKit
 
-class QuestionController: UIViewController {
+class QuestionController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet private var question: UILabel?
     @IBOutlet private var answer: UITextField?
@@ -17,9 +17,13 @@ class QuestionController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        answer?.delegate = self
+        answer?.text = ""
+        answer?.becomeFirstResponder()
+        
         if let quizword = WordsService.shared.currentWord {
             infoText?.text = "Level: \(quizword.level). Card \(WordsService.shared.wordNumber+1) of \(WordsService.shared.wordsForThisSession.count)."
-            if WordsService.shared.currentQuestionLocaleIsNL {
+            if WordsService.shared.reverseQuestion {
                 question?.text = quizword.answer
                 questionLocale?.image = UIImage(named: quizword.answerLocale.languageCode ?? "nl")
                 answerLocale?.image = UIImage(named: quizword.questionLocale.languageCode ?? "hu")
@@ -32,6 +36,14 @@ class QuestionController: UIViewController {
     }
     
     @IBAction func dontKnow() {
-        WordsService.shared.answer = answer?.text
+        WordsService.shared.answer = "I don't know"
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        WordsService.shared.answer = answer?.text
+        answer?.resignFirstResponder()
+        self.performSegue(withIdentifier: "showAnswer", sender: self)
+        return false
+    }
+    
 }

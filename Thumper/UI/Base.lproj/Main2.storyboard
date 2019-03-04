@@ -29,14 +29,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Answer?" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="DSc-rx-klr" userLabel="answer">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your answer?" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DSc-rx-klr" userLabel="answer">
                                 <rect key="frame" x="0.0" y="346" width="375" height="39"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGS-Rc-aLr" userLabel="dont_know">
-                                <rect key="frame" x="87.5" y="490" width="200" height="51"/>
+                                <rect key="frame" x="87.5" y="517" width="200" height="51"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="LP9-i6-5JM"/>
@@ -56,12 +56,12 @@
                             <constraint firstItem="DSc-rx-klr" firstAttribute="centerX" secondItem="tQx-Yf-7t8" secondAttribute="centerX" id="4PX-K5-NxQ"/>
                             <constraint firstItem="XTf-aM-GVp" firstAttribute="centerX" secondItem="tQx-Yf-7t8" secondAttribute="centerX" id="5AH-qg-cr6"/>
                             <constraint firstItem="DSc-rx-klr" firstAttribute="width" secondItem="qJ9-HS-A6p" secondAttribute="width" id="DOu-cT-iTm"/>
+                            <constraint firstItem="QGS-Rc-aLr" firstAttribute="bottom" secondItem="XTf-aM-GVp" secondAttribute="top" constant="-40" id="OHf-Na-s1J"/>
                             <constraint firstItem="XTf-aM-GVp" firstAttribute="bottom" secondItem="tQx-Yf-7t8" secondAttribute="bottom" constant="-20" id="QPb-m4-awL"/>
                             <constraint firstItem="jPq-iO-rK6" firstAttribute="width" secondItem="qJ9-HS-A6p" secondAttribute="width" id="SJH-K4-pCP"/>
                             <constraint firstItem="QGS-Rc-aLr" firstAttribute="centerX" secondItem="tQx-Yf-7t8" secondAttribute="centerX" id="SZe-HF-QXM"/>
                             <constraint firstItem="DSc-rx-klr" firstAttribute="centerY" secondItem="tQx-Yf-7t8" secondAttribute="centerY" id="TKq-fc-lmO"/>
                             <constraint firstItem="jPq-iO-rK6" firstAttribute="centerX" secondItem="tQx-Yf-7t8" secondAttribute="centerX" id="pnC-SP-8rs"/>
-                            <constraint firstItem="QGS-Rc-aLr" firstAttribute="centerY" secondItem="tQx-Yf-7t8" secondAttribute="centerY" constant="150" id="rEs-vy-ZRG"/>
                             <constraint firstItem="XTf-aM-GVp" firstAttribute="width" secondItem="qJ9-HS-A6p" secondAttribute="width" constant="-40" id="wgF-nv-KCf"/>
                             <constraint firstItem="jPq-iO-rK6" firstAttribute="centerY" secondItem="tQx-Yf-7t8" secondAttribute="centerY" constant="-100" id="yNC-tF-s7y"/>
                         </constraints>
@@ -98,71 +98,89 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question = answer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k79-C1-SQc" userLabel="correct_answer">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your answer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k79-C1-SQc" userLabel="your_answer">
                                 <rect key="frame" x="20" y="346" width="335" height="39"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 2 / Card 1 of 5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="2Hp-co-YfF" userLabel="info_text">
-                                <rect key="frame" x="20" y="618" width="335" height="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right answer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blD-3j-Zy0" userLabel="right_answer">
+                                <rect key="frame" x="20" y="425" width="335" height="39"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4r-qE-YpL" userLabel="next">
-                                <rect key="frame" x="37.5" y="490" width="100" height="51"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="F7E-55-Bla"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 2 / Card 1 of 5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="2Hp-co-YfF" userLabel="info_text">
+                                <rect key="frame" x="20" y="608" width="335" height="39"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="next" destination="zgL-yq-PcN" eventType="touchUpInside" id="5Jz-ya-wa4"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4i-zu-mol" userLabel="was_right">
-                                <rect key="frame" x="187.5" y="490" width="160" height="51"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="4GQ-mY-7mu"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                                <state key="normal" title="I was right">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="uA3-cO-cqP">
+                                <rect key="frame" x="20" y="517" width="335" height="51"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4r-qE-YpL" userLabel="next">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="51"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="F7E-55-Bla"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextWord" destination="zgL-yq-PcN" eventType="touchUpInside" id="VPj-YP-UUO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4i-zu-mol" userLabel="was_right">
+                                        <rect key="frame" x="175" y="0.0" width="160" height="51"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="4GQ-mY-7mu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                        <state key="normal" title="I was right">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="wasRight" destination="zgL-yq-PcN" eventType="touchUpInside" id="NdA-lL-bZN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="otS-xD-KPu" firstAttribute="width" secondItem="R3w-Uh-wvq" secondAttribute="width" id="095-G7-4Fc"/>
+                            <constraint firstItem="2Hp-co-YfF" firstAttribute="top" secondItem="uA3-cO-cqP" secondAttribute="bottom" constant="40" id="7GM-Xs-bJk"/>
                             <constraint firstItem="ccD-b1-c4g" firstAttribute="width" secondItem="R3w-Uh-wvq" secondAttribute="width" id="7Ph-Oj-yJz"/>
                             <constraint firstItem="k79-C1-SQc" firstAttribute="width" secondItem="R3w-Uh-wvq" secondAttribute="width" constant="-40" id="9xl-Ht-qKP"/>
                             <constraint firstItem="otS-xD-KPu" firstAttribute="centerX" secondItem="Sja-9z-Jpq" secondAttribute="centerX" id="AQT-dq-UJb"/>
-                            <constraint firstItem="R4i-zu-mol" firstAttribute="centerX" secondItem="Sja-9z-Jpq" secondAttribute="centerX" constant="80" id="L8a-b2-m9V"/>
-                            <constraint firstItem="R4i-zu-mol" firstAttribute="top" secondItem="r4r-qE-YpL" secondAttribute="top" id="Xs9-Ra-Ooa"/>
-                            <constraint firstItem="r4r-qE-YpL" firstAttribute="centerY" secondItem="Sja-9z-Jpq" secondAttribute="centerY" constant="150" id="avy-fy-onG"/>
+                            <constraint firstItem="uA3-cO-cqP" firstAttribute="width" secondItem="R3w-Uh-wvq" secondAttribute="width" constant="-40" id="L4B-Gt-JAQ"/>
+                            <constraint firstItem="blD-3j-Zy0" firstAttribute="width" secondItem="R3w-Uh-wvq" secondAttribute="width" constant="-40" id="MP1-do-a2T"/>
+                            <constraint firstItem="uA3-cO-cqP" firstAttribute="centerX" secondItem="Sja-9z-Jpq" secondAttribute="centerX" id="NmQ-tI-fWK"/>
+                            <constraint firstItem="blD-3j-Zy0" firstAttribute="centerX" secondItem="Sja-9z-Jpq" secondAttribute="centerX" id="d5p-1t-g9U"/>
                             <constraint firstItem="2Hp-co-YfF" firstAttribute="centerX" secondItem="Sja-9z-Jpq" secondAttribute="centerX" id="df2-Pf-DKa"/>
                             <constraint firstItem="otS-xD-KPu" firstAttribute="centerY" secondItem="Sja-9z-Jpq" secondAttribute="centerY" constant="-100" id="e1u-8t-WsO"/>
                             <constraint firstItem="2Hp-co-YfF" firstAttribute="width" secondItem="R3w-Uh-wvq" secondAttribute="width" constant="-40" id="eVG-XP-YHu"/>
                             <constraint firstItem="k79-C1-SQc" firstAttribute="centerY" secondItem="Sja-9z-Jpq" secondAttribute="centerY" id="gat-ri-BuD"/>
+                            <constraint firstItem="blD-3j-Zy0" firstAttribute="top" secondItem="k79-C1-SQc" secondAttribute="bottom" constant="40" id="hlS-1Q-tlc"/>
                             <constraint firstItem="k79-C1-SQc" firstAttribute="centerX" secondItem="Sja-9z-Jpq" secondAttribute="centerX" id="kgn-oK-gCO"/>
                             <constraint firstItem="ccD-b1-c4g" firstAttribute="centerY" secondItem="Sja-9z-Jpq" secondAttribute="centerY" constant="-100" id="lND-6z-Oa2"/>
-                            <constraint firstItem="Sja-9z-Jpq" firstAttribute="bottom" secondItem="2Hp-co-YfF" secondAttribute="bottom" constant="10" id="nhi-9O-Xxd"/>
+                            <constraint firstItem="Sja-9z-Jpq" firstAttribute="bottom" secondItem="2Hp-co-YfF" secondAttribute="bottom" constant="20" id="nhi-9O-Xxd"/>
                             <constraint firstItem="ccD-b1-c4g" firstAttribute="centerX" secondItem="Sja-9z-Jpq" secondAttribute="centerX" id="vyV-67-kDy"/>
-                            <constraint firstItem="r4r-qE-YpL" firstAttribute="centerX" secondItem="Sja-9z-Jpq" secondAttribute="centerX" constant="-100" id="xNc-QQ-oab"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Sja-9z-Jpq"/>
                     </view>
                     <connections>
                         <outlet property="correct" destination="ccD-b1-c4g" id="ab4-f0-HDx"/>
-                        <outlet property="correct_answer" destination="k79-C1-SQc" id="BsC-oy-IIg"/>
+                        <outlet property="correct_answer" destination="blD-3j-Zy0" id="Gro-Or-ICz"/>
                         <outlet property="infoText" destination="2Hp-co-YfF" id="TFw-wi-yn9"/>
                         <outlet property="nextButton" destination="r4r-qE-YpL" id="LOO-oe-PuR"/>
+                        <outlet property="wasRightButton" destination="R4i-zu-mol" id="a7g-Rj-aje"/>
                         <outlet property="wrong" destination="otS-xD-KPu" id="V4a-te-Zc6"/>
+                        <outlet property="your_answer" destination="k79-C1-SQc" id="cQD-0w-vkU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dUg-nO-U2i" userLabel="First Responder" sceneMemberID="firstResponder"/>

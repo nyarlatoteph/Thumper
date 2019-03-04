@@ -22,7 +22,7 @@ class WordsService {
     public var newWordsPerDay = 5
     public var currentWord: QuizWord? = nil
     public var wordNumber: Int = 0
-    public var currentQuestionLocaleIsNL: Bool = false
+    public var reverseQuestion: Bool = false
     public var answer: String?
     
     public var lastUsed: Date? {
@@ -158,14 +158,36 @@ class WordsService {
         if hasNext() {
             wordNumber = wordNumber+1
             currentWord = wordsForThisSession[wordNumber]
-            currentQuestionLocaleIsNL = Bool.random()
+            reverseQuestion = Bool.random()
         }
         return currentWord
     }
     
     public func isAnswerCorrect() -> Bool {
-        if currentQuestionLocaleIsNL {
-            
+        guard let response = answer?.lowercased() else {
+            return false
         }
+        var question: String
+        if reverseQuestion {
+            question = currentWord!.question.lowercased()
+        } else {
+            question = currentWord!.answer.lowercased()
+        }
+        if question == response {
+            return true
+        }
+        
+        if question.contains(",") || question.contains("(=") {
+            return question.contains(response)
+        }
+        return false
+    }
+    
+    public func update() {
+        
+    }
+    
+    public func wasRight() {
+        
     }
 }
