@@ -15,8 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         do {
-            let sessionDay = LevelService.shared.sessionDay(WordsService.shared.lastUsed)
-            let levels = LevelService.shared.levelsForDay(sessionDay)
+            let levels = LevelService.shared.levelsForDay(WordsService.shared.sessionDay)
             try WordsService.shared.initWordsForLevels(levels)
             
             print(WordsService.shared.wordsForThisSession)

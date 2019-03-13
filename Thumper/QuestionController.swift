@@ -16,13 +16,14 @@ class QuestionController: UIViewController, UITextFieldDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
         
         answer?.delegate = self
         answer?.text = ""
         answer?.becomeFirstResponder()
         
         if let quizword = WordsService.shared.currentWord {
-            infoText?.text = "Level: \(quizword.level). Card \(WordsService.shared.wordNumber+1) of \(WordsService.shared.wordsForThisSession.count)."
+            infoText?.text = "D \(WordsService.shared.sessionDay) - L \(quizword.level) - # \(WordsService.shared.wordNumber+1) / \(WordsService.shared.wordsForThisSession.count)."
             if WordsService.shared.reverseQuestion {
                 question?.text = quizword.answer
                 questionLocale?.image = UIImage(named: quizword.answerLocale.languageCode ?? "nl")
@@ -38,6 +39,7 @@ class QuestionController: UIViewController, UITextFieldDelegate {
     @IBAction func dontKnow() {
         WordsService.shared.answer = "I don't know"
     }
+    
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         WordsService.shared.answer = answer?.text

@@ -17,6 +17,9 @@ class AnswerController: UIViewController {
     @IBOutlet private var wasRightButton: UIButton?
 
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
+        
         if let quizword = WordsService.shared.currentWord {
             let is_correct = WordsService.shared.isAnswerCorrect()
             
@@ -33,24 +36,40 @@ class AnswerController: UIViewController {
             } else {
                 correct_answer?.text = "\(quizword.question) = \(quizword.answer)"
             }
-            infoText?.text = "Level: \(quizword.level). Card \(WordsService.shared.wordNumber+1) of \(WordsService.shared.wordsForThisSession.count)."
+            infoText?.text = "D \(WordsService.shared.sessionDay) - L \(quizword.level) - # \(WordsService.shared.wordNumber+1) / \(WordsService.shared.wordsForThisSession.count)."
         }
         
-        nextButton?.isEnabled = WordsService.shared.hasNext()
+        nextButton?.setTitle(WordsService.shared.hasNext() ? "Next" : "Finish", for: .normal)
     }
     
     private func next() {
-        _ = WordsService.shared.next()
-        _ = navigationController?.popViewController(animated: true)
+        do {
+            if WordsService.shared.hasNext() {
+                _ = WordsService.shared.next()
+                _ = navigationController?.popViewController(animated: true)
+            } else {
+                try WordsService.shared.finishSession()
+            }
+        } catch {
+            print("Error updating: \(error)")
+        }
     }
     
     @IBAction public func nextWord() {
-        WordsService.shared.update()
-        next()
+        do {
+            try WordsService.shared.update()
+            next()
+        } catch {
+            print("Error updating or retrieving next word: \(error)")
+        }
     }
     
     @IBAction public func wasRight() {
-        WordsService.shared.wasRight()
-        next()
+        do {
+            try WordsService.shared.wasRight()
+            next()
+        } catch {
+            print("Error updating or retrieving next word: \(error)")
+        }
     }
 }
