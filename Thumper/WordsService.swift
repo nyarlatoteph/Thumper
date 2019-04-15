@@ -20,18 +20,32 @@ class WordsService {
     static let shared = WordsService()
     private var db: FMDatabase?
     public var wordsForThisSession: [QuizWord] = []
-    public var newWordsPerDay = 5
+    public var newWordsPerDay = 10
     public var currentWord: QuizWord? = nil
     public var wordNumber: Int = 0
     public var reverseQuestion: Bool = false
     public var answer: String?
     public var sessionDay: Int = 0
-    
 
+    
+    // TODO:
+    // 1. Overzicht van fouten aan het eind
+    // 2. Meer voorkeur voor nederlands -> hongaars (zeg 3:1)
+    // 3. Vlag tonen bij vraag + antwoord
+    // 4. Vooraf overicht van nieuwe woorden
     private init() {
         do {
             if let documentsPathURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
-                if let db = FMDatabase(path: "\(documentsPathURL.path)/words.db") {
+                let dbURL = URL(fileURLWithPath: "\(documentsPathURL.path)/words.db")
+                // Copy bundled database, if it exists and if we don't have a db file yet
+                if let bundledDbURL = Bundle.main.url(forResource: "words", withExtension: "db") {
+                    if !FileManager.default.fileExists(atPath: dbURL.path) {
+                        try FileManager.default.copyItem(at: bundledDbURL, to: dbURL)
+                    }
+                }
+                
+                // Open database
+                if let db = FMDatabase(path: dbURL.path) {
                     self.db = db
                     if db.open() {
                         if !db.tableExists("words") {

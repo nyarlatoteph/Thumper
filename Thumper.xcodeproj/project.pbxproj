@@ -17,6 +17,7 @@
 		16380153217B888A003CBF75 /* ThumperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16380152217B888A003CBF75 /* ThumperTests.swift */; };
 		1638015E217B888B003CBF75 /* ThumperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1638015D217B888B003CBF75 /* ThumperUITests.swift */; };
 		1638016C217B926C003CBF75 /* WordsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1638016B217B926C003CBF75 /* WordsService.swift */; };
+		163F7D09224973F400E035F1 /* words.db in Resources */ = {isa = PBXBuildFile; fileRef = 163F7D08224973F400E035F1 /* words.db */; };
 		167608FE22120C0600940CF3 /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 167608FC22120C0600940CF3 /* Main2.storyboard */; };
 		16957B9B220A251000F63A00 /* words in Resources */ = {isa = PBXBuildFile; fileRef = 16957B9A220A251000F63A00 /* words */; };
 		16D3AE0A221B45FA0051F79B /* LevelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D3AE09221B45FA0051F79B /* LevelService.swift */; };
@@ -58,6 +59,7 @@
 		1638015D217B888B003CBF75 /* ThumperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumperUITests.swift; sourceTree = "<group>"; };
 		1638015F217B888B003CBF75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1638016B217B926C003CBF75 /* WordsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsService.swift; sourceTree = "<group>"; };
+		163F7D08224973F400E035F1 /* words.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = words.db; path = resources/words.db; sourceTree = "<group>"; };
 		167608FD22120C0600940CF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main2.storyboard; sourceTree = "<group>"; };
 		16957B9A220A251000F63A00 /* words */ = {isa = PBXFileReference; lastKnownFileType = folder; name = words; path = resources/words; sourceTree = "<group>"; };
 		169F747E21FF8C6500DDAE6E /* libkfmdb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libkfmdb.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +123,7 @@
 		1638013C217B8889003CBF75 /* Thumper */ = {
 			isa = PBXGroup;
 			children = (
+				163F7D08224973F400E035F1 /* words.db */,
 				16957B9A220A251000F63A00 /* words */,
 				1638013D217B8889003CBF75 /* AppDelegate.swift */,
 				1638013F217B8889003CBF75 /* QuizController.swift */,
@@ -290,6 +293,7 @@
 			files = (
 				16E933D721FF8AF70074E266 /* Podfile in Resources */,
 				16380148217B888A003CBF75 /* LaunchScreen.storyboard in Resources */,
+				163F7D09224973F400E035F1 /* words.db in Resources */,
 				16380145217B888A003CBF75 /* Assets.xcassets in Resources */,
 				16380143217B8889003CBF75 /* Main.storyboard in Resources */,
 				167608FE22120C0600940CF3 /* Main2.storyboard in Resources */,
