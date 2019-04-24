@@ -18,7 +18,7 @@ class AnswerController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.isNavigationBarHidden = true
+//        self.navigationController?.isNavigationBarHidden = true
         
         if let quizword = WordsService.shared.currentWord {
             let is_correct = WordsService.shared.isAnswerCorrect()
@@ -39,7 +39,12 @@ class AnswerController: UIViewController {
             infoText?.text = "D \(WordsService.shared.sessionDay) - L \(quizword.level) - # \(WordsService.shared.wordNumber+1) / \(WordsService.shared.wordsForThisSession.count)."
         }
         
-        nextButton?.setTitle(WordsService.shared.hasNext() ? "Next" : "Finish", for: .normal)
+        if WordsService.shared.hasNext() {
+            nextButton?.setTitle("Next", for: .normal)
+        } else {
+            performSegue(withIdentifier: "errorsReview", sender: self)
+            nextButton?.setTitle("Finish", for: .normal)
+        }
     }
     
     private func next() {

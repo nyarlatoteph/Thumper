@@ -19,19 +19,19 @@ class WordsService {
     
     static let shared = WordsService()
     private var db: FMDatabase?
-    public var wordsForThisSession: [QuizWord] = []
+    private(set) var wordsForThisSession: [QuizWord] = []
+    private(set) var newWords: [QuizWord] = []
+    private(set) var incorrectWords: [QuizWord] = []
     public var newWordsPerDay = 10
     public var currentWord: QuizWord? = nil
-    public var wordNumber: Int = 0
+    private(set) var wordNumber: Int = 0
     public var reverseQuestion: Bool = false
     public var answer: String?
-    public var sessionDay: Int = 0
+    private(set) var sessionDay: Int = 0
 
     
     // TODO:
     // 1. Overzicht van fouten aan het eind
-    // 2. Meer voorkeur voor nederlands -> hongaars (zeg 3:1)
-    // 3. Vlag tonen bij vraag + antwoord
     // 4. Vooraf overicht van nieuwe woorden
     private init() {
         do {
@@ -126,12 +126,16 @@ class WordsService {
                     let qlc = rs.string(forColumn: "questionLocale").trimmingCharacters(in: .whitespacesAndNewlines)
                     let alc = rs.string(forColumn: "answerLocale").trimmingCharacters(in: .whitespacesAndNewlines)
                     let level = rs.int(forColumn: "level")
-                    wordsToAdd.append(QuizWord(id: id,
-                                               question: question,
-                                                 answer: answer,
-                                                 questionLocale: Locale(identifier: qlc),
-                                                 answerLocale: Locale(identifier: alc),
-                                                 level: level))
+                    let quizWord = QuizWord(id: id,
+                                            question: question,
+                                            answer: answer,
+                                            questionLocale: Locale(identifier: qlc),
+                                            answerLocale: Locale(identifier: alc),
+                                            level: level)
+                    if (level == 1) {
+                        newWords.append(quizWord)
+                    }
+                    wordsToAdd.append(quizWord)
                 }
             }
             wordsToAdd.shuffle()
@@ -165,7 +169,7 @@ class WordsService {
         if hasNext() {
             wordNumber = wordNumber+1
             currentWord = wordsForThisSession[wordNumber]
-            reverseQuestion = Bool.random()
+            reverseQuestion = Int.random(in: 1...100) < 75
         }
         return currentWord
     }
@@ -198,15 +202,15 @@ class WordsService {
         guard let cw = currentWord else {
             return
         }
-        let level = isAnswerCorrect() ? cw.level + 1 : 1
+        
+        var level = cw.level
+        if isAnswerCorrect() {
+            level += 1
+        } else {
+            level = 1
+            incorrectWords.append(cw)
+        }
         try db?.executeUpdate("update words set level = ? where id = ?", values: [ level, cw.id ])
-    }
-    
-    public func finishSession() throws {
-        try db?.executeUpdate("delete from status", values: nil)
-        try db?.executeUpdate("insert into status (sessionDay) values (?)", values: [ sessionDay + 1 ])
-        try selectNewWordsForLevel1()
-        exit(0)
     }
     
     public func wasRight() throws {
@@ -214,5 +218,12 @@ class WordsService {
             return
         }
         try db?.executeUpdate("update words set level = ? where id = ?", values: [ cw.level + 1, cw.id ])
+    }
+
+    public func finishSession() throws {
+        try db?.executeUpdate("delete from status", values: nil)
+        try db?.executeUpdate("insert into status (sessionDay) values (?)", values: [ sessionDay + 1 ])
+        try selectNewWordsForLevel1()
+        exit(0)
     }
 }

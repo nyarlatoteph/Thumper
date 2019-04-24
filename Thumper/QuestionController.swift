@@ -13,10 +13,11 @@ class QuestionController: UIViewController, UITextFieldDelegate {
     @IBOutlet private var infoText: UILabel?
     @IBOutlet private var questionLocale: UIImageView?
     @IBOutlet private var answerLocale: UIImageView?
+    private var firstTime: Bool = true
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.isNavigationBarHidden = true
+//        self.navigationController?.isNavigationBarHidden = true
         
         answer?.delegate = self
         answer?.text = ""
@@ -34,12 +35,20 @@ class QuestionController: UIViewController, UITextFieldDelegate {
                 answerLocale?.image = UIImage(named: quizword.answerLocale.languageCode ?? "hu")
             }
         }
+        
+        // Present new words overview controller first
+        if (firstTime) {
+            firstTime = false
+            performSegue(withIdentifier: "newWordsOverview", sender: self)
+        }
     }
     
     @IBAction func dontKnow() {
         WordsService.shared.answer = "I don't know"
     }
     
+    
+    // UITextFieldDelegate
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         WordsService.shared.answer = answer?.text

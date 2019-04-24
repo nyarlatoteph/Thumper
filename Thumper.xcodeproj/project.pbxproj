@@ -20,6 +20,7 @@
 		163F7D09224973F400E035F1 /* words.db in Resources */ = {isa = PBXBuildFile; fileRef = 163F7D08224973F400E035F1 /* words.db */; };
 		167608FE22120C0600940CF3 /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 167608FC22120C0600940CF3 /* Main2.storyboard */; };
 		16957B9B220A251000F63A00 /* words in Resources */ = {isa = PBXBuildFile; fileRef = 16957B9A220A251000F63A00 /* words */; };
+		16A7DEF9227009270094DDD3 /* ReviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A7DEF8227009270094DDD3 /* ReviewController.swift */; };
 		16D3AE0A221B45FA0051F79B /* LevelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D3AE09221B45FA0051F79B /* LevelService.swift */; };
 		16E933D721FF8AF70074E266 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 16E933D621FF8AF70074E266 /* Podfile */; };
 		9A122223514E6F68369A78DC /* Pods_Thumper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1FBB1F4463ECA9406133390 /* Pods_Thumper.framework */; };
@@ -64,6 +65,7 @@
 		16957B9A220A251000F63A00 /* words */ = {isa = PBXFileReference; lastKnownFileType = folder; name = words; path = resources/words; sourceTree = "<group>"; };
 		169F747E21FF8C6500DDAE6E /* libkfmdb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libkfmdb.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		169F748021FF8C6500DDAE6E /* libksqlite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libksqlite.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		16A7DEF8227009270094DDD3 /* ReviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewController.swift; sourceTree = "<group>"; };
 		16D3AE09221B45FA0051F79B /* LevelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelService.swift; sourceTree = "<group>"; };
 		16E933D621FF8AF70074E266 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6E4BEF9699DF2B7D9CDD0411 /* Pods-Thumper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thumper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Thumper/Pods-Thumper.debug.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				1638016B217B926C003CBF75 /* WordsService.swift */,
 				16D3AE09221B45FA0051F79B /* LevelService.swift */,
 				161C8BA2221212C900EBF90A /* QuestionController.swift */,
+				16A7DEF8227009270094DDD3 /* ReviewController.swift */,
 				161C8BA42212193200EBF90A /* AnswerController.swift */,
 			);
 			path = Thumper;
@@ -370,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16380140217B8889003CBF75 /* QuizController.swift in Sources */,
+				16A7DEF9227009270094DDD3 /* ReviewController.swift in Sources */,
 				1638016C217B926C003CBF75 /* WordsService.swift in Sources */,
 				1638013E217B8889003CBF75 /* AppDelegate.swift in Sources */,
 				161C8BA3221212C900EBF90A /* QuestionController.swift in Sources */,
