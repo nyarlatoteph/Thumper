@@ -22,13 +22,14 @@ class WordsService {
     private(set) var wordsForThisSession: [QuizWord] = []
     private(set) var newWords: [QuizWord] = []
     private(set) var incorrectWords: [QuizWord] = []
+    private(set) var sessionDay: Int = 0
+    private(set) var wordNumber: Int = 0
+
     public var newWordsPerDay = 10
     public var currentWord: QuizWord? = nil
-    private(set) var wordNumber: Int = 0
     public var reverseQuestion: Bool = false
     public var answer: String?
-    private(set) var sessionDay: Int = 0
-
+    public var hasReviewedErrors: Bool = false
     
     // TODO:
     // 1. Overzicht van fouten aan het eind

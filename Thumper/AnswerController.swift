@@ -41,8 +41,9 @@ class AnswerController: UIViewController {
         
         if WordsService.shared.hasNext() {
             nextButton?.setTitle("Next", for: .normal)
-        } else {
+        } else if !WordsService.shared.hasReviewedErrors {
             performSegue(withIdentifier: "errorsReview", sender: self)
+            WordsService.shared.hasReviewedErrors = true
             nextButton?.setTitle("Finish", for: .normal)
         }
     }
