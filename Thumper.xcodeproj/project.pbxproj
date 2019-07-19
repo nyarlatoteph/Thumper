@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16056C6222E23A9E006BA871 /* words.db in Resources */ = {isa = PBXBuildFile; fileRef = 16056C5F22E232A1006BA871 /* words.db */; };
 		161C8BA3221212C900EBF90A /* QuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161C8BA2221212C900EBF90A /* QuestionController.swift */; };
 		161C8BA52212193200EBF90A /* AnswerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161C8BA42212193200EBF90A /* AnswerController.swift */; };
 		1638013E217B8889003CBF75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1638013D217B8889003CBF75 /* AppDelegate.swift */; };
@@ -17,7 +18,6 @@
 		16380153217B888A003CBF75 /* ThumperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16380152217B888A003CBF75 /* ThumperTests.swift */; };
 		1638015E217B888B003CBF75 /* ThumperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1638015D217B888B003CBF75 /* ThumperUITests.swift */; };
 		1638016C217B926C003CBF75 /* WordsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1638016B217B926C003CBF75 /* WordsService.swift */; };
-		163F7D09224973F400E035F1 /* words.db in Resources */ = {isa = PBXBuildFile; fileRef = 163F7D08224973F400E035F1 /* words.db */; };
 		167608FE22120C0600940CF3 /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 167608FC22120C0600940CF3 /* Main2.storyboard */; };
 		16957B9B220A251000F63A00 /* words in Resources */ = {isa = PBXBuildFile; fileRef = 16957B9A220A251000F63A00 /* words */; };
 		16A7DEF9227009270094DDD3 /* ReviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A7DEF8227009270094DDD3 /* ReviewController.swift */; };
@@ -44,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16056C5F22E232A1006BA871 /* words.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = words.db; path = ../../../../Downloads/words.db; sourceTree = "<group>"; };
 		161C8BA2221212C900EBF90A /* QuestionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionController.swift; sourceTree = "<group>"; };
 		161C8BA42212193200EBF90A /* AnswerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerController.swift; sourceTree = "<group>"; };
 		1638013A217B8889003CBF75 /* Thumper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thumper.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,7 +61,6 @@
 		1638015D217B888B003CBF75 /* ThumperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumperUITests.swift; sourceTree = "<group>"; };
 		1638015F217B888B003CBF75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1638016B217B926C003CBF75 /* WordsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsService.swift; sourceTree = "<group>"; };
-		163F7D08224973F400E035F1 /* words.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = words.db; path = resources/words.db; sourceTree = "<group>"; };
 		167608FD22120C0600940CF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main2.storyboard; sourceTree = "<group>"; };
 		16957B9A220A251000F63A00 /* words */ = {isa = PBXFileReference; lastKnownFileType = folder; name = words; path = resources/words; sourceTree = "<group>"; };
 		169F747E21FF8C6500DDAE6E /* libkfmdb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libkfmdb.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,7 +125,7 @@
 		1638013C217B8889003CBF75 /* Thumper */ = {
 			isa = PBXGroup;
 			children = (
-				163F7D08224973F400E035F1 /* words.db */,
+				16056C5F22E232A1006BA871 /* words.db */,
 				16957B9A220A251000F63A00 /* words */,
 				1638013D217B8889003CBF75 /* AppDelegate.swift */,
 				1638013F217B8889003CBF75 /* QuizController.swift */,
@@ -296,7 +296,7 @@
 			files = (
 				16E933D721FF8AF70074E266 /* Podfile in Resources */,
 				16380148217B888A003CBF75 /* LaunchScreen.storyboard in Resources */,
-				163F7D09224973F400E035F1 /* words.db in Resources */,
+				16056C6222E23A9E006BA871 /* words.db in Resources */,
 				16380145217B888A003CBF75 /* Assets.xcassets in Resources */,
 				16380143217B8889003CBF75 /* Main.storyboard in Resources */,
 				167608FE22120C0600940CF3 /* Main2.storyboard in Resources */,

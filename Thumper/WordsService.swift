@@ -25,15 +25,12 @@ class WordsService {
     private(set) var sessionDay: Int = 0
     private(set) var wordNumber: Int = 0
 
-    public var newWordsPerDay = 10
+    public var newWordsPerDay: Int32 = 10
     public var currentWord: QuizWord? = nil
     public var reverseQuestion: Bool = false
     public var answer: String?
     public var hasReviewedErrors: Bool = false
     
-    // TODO:
-    // 1. Overzicht van fouten aan het eind
-    // 4. Vooraf overicht van nieuwe woorden
     private init() {
         do {
             if let documentsPathURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
@@ -61,7 +58,7 @@ class WordsService {
                             }
                         }
                         
-                        let rs = try db.executeQuery("select count(*) from words where level > 0", values: [])
+                        let rs = try db.executeQuery("select count(*) from words where level = 1", values: [])
                         if rs.next() {
                             if rs.int(forColumnIndex: 0) == 0 {
                                 try self.selectNewWordsForLevel1()
@@ -91,7 +88,15 @@ class WordsService {
     }
 
     private func selectNewWordsForLevel1() throws {
-        try db?.executeUpdate("update words set level = 1 where level = 0 limit ?", values: [ newWordsPerDay ])
+        var num: Int32 = newWordsPerDay
+        if let rs = try db?.executeQuery("select count(*) from words where level = 1", values: []) {
+            if rs.next() {
+                num = newWordsPerDay - rs.int(forColumnIndex: 0)
+            }
+        }
+        if (num > 0) {
+            try db?.executeUpdate("update words set level = 1 where level = 0 limit ?", values: [ num ])
+        }
     }
     
     private func insertIntoDb(_ path: String, file: String) throws {
