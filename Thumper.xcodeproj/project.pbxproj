@@ -44,7 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		16056C5F22E232A1006BA871 /* words.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = words.db; path = ../../../../Downloads/words.db; sourceTree = "<group>"; };
+		16056C5F22E232A1006BA871 /* words.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = words.db; path = resources/words.db; sourceTree = "<group>"; };
 		161C8BA2221212C900EBF90A /* QuestionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionController.swift; sourceTree = "<group>"; };
 		161C8BA42212193200EBF90A /* AnswerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerController.swift; sourceTree = "<group>"; };
 		1638013A217B8889003CBF75 /* Thumper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thumper.app; sourceTree = BUILT_PRODUCTS_DIR; };
